@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/alessandrotraversi/VueStartingPoint.svg?branch=master)](https://travis-ci.org/alessandrotraversi/VueStartingPoint)
+[![Build Status](https://travis-ci.org/alessandrotraversi/vue2-auth.svg?branch=master)](https://travis-ci.org/alessandrotraversi/vue2-auth)
 
 # VueStartingPoint
 
