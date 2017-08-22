@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.u-hidden-visually {
+    visibility: hidden;
+}
+
+
+/**
+ * Hide visually and from screen readers.
+ */
+
+.u-hidden {
+    display: none !important;
+}
+
+
+/**
+ * Hide to all device
+ */
+
+.u-hide-to--mobile {
+    @include breakpoint($all-device) {
+        display: none
+    }
+}
+
+
+/**
+ * Hide to all device
+ */
+
+.u-hide-to--screen {
+    @include breakpoint($all-screen) {
+        display: none
+    }
+}

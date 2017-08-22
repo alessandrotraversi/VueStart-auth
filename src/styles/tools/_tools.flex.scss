@@ -1,0 +1,7 @@
+// use crossbrowser flex
+@mixin flex{
+  -js-display: flex; // for IE compatibility
+  @include display-flex;
+}
+
+.u-flex--space-between{ @include justify-content(space-between); }

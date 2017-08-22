@@ -1,0 +1,30 @@
+@function get-vw-r6($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+@function get-vw-r1($target) {
+  $vw-context: (1080 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+@function get-vw-r3($target) {
+  $vw-context: (1366 * 0.01) * 1px;
+  @return ( $target / $vw-context) * 1vw;
+}
+
+@function get-vw-scaling($target) {
+  $corect-target: $target * 1.25;
+  $vw-context: (997 * 0.01) * 1px;
+  @return ($corect-target / $vw-context) * 1vw;
+}
+
+@function get-vw-content($target) {
+  $corect-target: $target * 0.713564;
+  $vw-context: (997 * 0.01) * 1px;
+  @return ($corect-target / $vw-context) * 1vw;
+}
+
+@function get-relative-percentage($container-width, $element-width){
+  @return 100% * ($element-width / $container-width);
+};

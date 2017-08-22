@@ -1,0 +1,10 @@
+/* ==========================================================================
+# Button component
+========================================================================== */
+
+body {
+    @include breakpoint($all-screen) {
+        color: #bcb !important;
+        text-align: left !important;
+    }
+}

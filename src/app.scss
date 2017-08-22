@@ -1,0 +1,11 @@
+// imports sass mixins dependencies
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../node_modules/compass-mixins/lib/compass";
+
+// imports own ITCSS project
+@import "styles/settings/settings";
+@import "styles/generic/generic";
+@import "styles/elements/elements";
+@import "styles/objects/objects";
+@import "styles/components/components";
+@import "styles/utilities/utilities";

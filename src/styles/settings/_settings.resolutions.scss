@@ -1,0 +1,27 @@
+///* ========================================================================
+//   # Media query Breakpoints
+//   ======================================================================== */
+
+// assume min-width (by default) if only a number => $high-tide: 500px;
+// set min-width/max-width if both values are numbers => $ex-presidents: 600px 800px;
+// if one value is a string, assume a feature/value pair => $surfboard-width: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair => $surfboard-height: (min-height 1000px) (orientation portrait);
+
+
+// Resolutions vars
+$breakpoint-1: 320px;
+$breakpoint-2: 540px;
+$breakpoint-3: 768px;
+$breakpoint-4: 1024px;
+$breakpoint-5: 1440px;
+$breakpoint-6: 1920px;
+
+$device-sm: 0 539px;
+$device-md: 540px 767px;
+$device-lg: 768px 1023px;
+$screen-sm: 1024px 1439px;
+$screen-md: 1440px 1919px;
+$screen-lg: 1920px 9999px;
+
+$all-device:0 997px;
+$all-screen:998px 9999px;
