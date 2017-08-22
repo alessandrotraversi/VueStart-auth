@@ -1,11 +1,6 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
 import JwtToken from '../services/jwt-token';
 import { User } from '../services/resources';
 import SessionStorage from '../services/session-storage';
-
-Vue.use(Vuex);
-
 
 const state = {
     auth: {
@@ -45,8 +40,9 @@ const actions = {
     }
 };
 
-export default new Vuex.Store({
-    state,
-    mutations,
-    actions
-});
+const module = {
+    namespaced: true,
+    state, mutations, actions
+};
+
+export default module;
