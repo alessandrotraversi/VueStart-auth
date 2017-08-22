@@ -17,8 +17,8 @@
                             .col-md-6
                                 input#password.form-control(type='password', name='password', required='', v-model='user.password')
                         .form-group
-                            .col-md-8.col-md-offset-4
-                                button.btn.btn-primary(type='submit')
+                            .col-md-8.col-md-offset-5
+                                button.btn.btn-primary(type='submit') Send
 </template>
 
 <script>

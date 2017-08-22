@@ -2,10 +2,16 @@
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "../node_modules/compass-mixins/lib/compass";
 
+// imports bootstrap
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import 'assets/styles/bootstrap-variable-overrides';
+//@import 'assets/styles/overrides'; for rewrite style
+
 // imports own ITCSS project
-@import "styles/settings/settings";
-@import "styles/generic/generic";
-@import "styles/elements/elements";
-@import "styles/objects/objects";
-@import "styles/components/components";
-@import "styles/utilities/utilities";
+@import "assets/styles/settings/settings";
+@import "assets/styles/generic/generic";
+@import "assets/styles/elements/elements";
+@import "assets/styles/objects/objects";
+@import "assets/styles/components/components";
+@import "assets/styles/utilities/utilities";
