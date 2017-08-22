@@ -31,13 +31,9 @@
 
 <script>
 
-alert('ciao');
-$(document).ready(function(){
-  $('.miaclass').css('color','#f00');
-});
-
+//alert('hello page');
+import store from '../store/store';
 export default {
-  name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

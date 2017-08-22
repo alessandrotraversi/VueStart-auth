@@ -6,8 +6,31 @@
 </template>
 
 <script>
+import store from './store/store';
 export default {
-  name: 'app'
+  name: 'app',
+  computed: {
+      isAuth(){
+          return store.state.auth.check;
+      },
+      /*created(){
+            if(this.isAuth) {
+                //do somethings
+                // store.dispatch('');
+            }
+      },*/
+      user(){
+          return store.state.auth.user ? store.state.auth.user : {'name': ''};
+      }
+      /*watch: {
+        isAuth(value){
+            if (value) {
+                //do somethings
+                //store.dispatch('');
+            }
+        }
+      }*/
+  }
 }
 </script>
 

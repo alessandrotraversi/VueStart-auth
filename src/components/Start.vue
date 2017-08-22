@@ -1,24 +1,11 @@
 <template lang="pug">
-
-h1 Logout...
+  
+h1 starting
 
 </template>
 
 <script>
 import store from '../store/store';
-export default {
-    mounted(){
-        setTimeout(() => {
-            this.logout();
-        },2000)
-    },
-    methods: {
-        logout(){
-            store.commit('unauthenticated');
-            this.$router.push({name: 'auth.login'});
-        }
-    }
-}
 
 </script>
 

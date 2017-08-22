@@ -2,7 +2,7 @@
 
 # VueStartingPoint
 
-> A Vue.js starting point with Vue.js 2 (vuex, vue-router, vue-resource), Webpack, Pug, Scss(ITCSS) and jQuery
+> A Vue.js starting point with Vue.js 2 (vuex, vue-router, vue-resource), Webpack, Pug, Scss(ITCSS) and jQuery + JWT auth component
 
 ## Usage
 

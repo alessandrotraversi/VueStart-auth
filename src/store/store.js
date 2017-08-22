@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import JwtToken from '../services/jwt-token';
-import { Time, User } from '../services/resources';
+import { User } from '../services/resources';
 import SessionStorage from '../services/session-storage';
 
 Vue.use(Vuex);

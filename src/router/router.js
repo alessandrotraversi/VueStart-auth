@@ -1,24 +1,19 @@
-import LoginComponent from '../components/Login.vue';
-import LogoutComponent from '../components/Logout.vue';
-import HelloComponent from '../components/Hello.vue';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import routes from './router.map';
+import store from '../store/store';
 
-export default [
-  {
-    name: 'auth.login',
-    path: '/login',
-    component: LoginComponent,
-    meta: { auth: false }
-  },
-  {
-    name: 'auth.logout',
-    path: '/logout',
-    component: LogoutComponent,
-    meta: { auth: true }
-  },
-  {
-    name: 'auth.hello',
-    path: '/hello',
-    component: hello,
-    meta: { auth: true }
-  },
-];
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes
+});
+
+router.beforeEach((to, from, next) => {
+  if (!store.state.auth.check && to.meta.auth) {
+    return router.push({ name: 'auth.login' });
+  }
+  next();
+});
+
+export default router;
